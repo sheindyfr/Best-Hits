@@ -1,10 +1,10 @@
-# Best-Hits
 Best-Hits REST service, add your favorite artists & songs.
 
 this project was done as part of Distributed Systems course.
 
+![](website.gif)
 
-##### How to run?
+#### How to run?
 
 in the server side:
 ```buildoutcfg
@@ -14,7 +14,7 @@ node ./server
 in the client side:
 http://localhost:3001/
 
-##### Technologies:
+#### Technologies:
 * Server Side: Node.js, using express, mongoose and more
 * Client Side: JavaScript, using ajax, jQuary etc.
 * DataBase: MongoDB
