@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/../js/scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- INTRODUCTION -->
+    <div class="about-section">
+        <h1 class="title">Best Hits</h1>
+        <p>Best Hits REST service</p>
+        <p>Add your favorite artists & songs</p>
+    </div>
+
+    <h2 class="title" style="text-align:center">Artists List</h2>
+
+    <!-- THE MAIN CONTENT -->
+    <center>
+        <p><button class="add_artist">Add Artist</button></p>
+        <div id="artists_list"></div>
+        <p><button class="add_artist">Add Artist</button></p>
+    </center>
+
+
+    <!-- MODAL OF THE FORM -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div id="parent_form" class="col-sm-6 col-sm-offset-3">
+
+            <h1 class="title">add new artist</h1>
+
+            <!-- OUR FORM -->
+            <form id="artist_form" name="artist_form" method="POST">
+
+                <!-- NAME -->
+                <div id="name-group" class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="art_name" id="art_name" placeholder="write name here" required>
+                    <!-- errors will go here -->
+                </div>
+
+                <!-- ID -->
+                <div id="name-group" class="form-group">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" name="id_field" id="id_field" placeholder="write id here" required>
+                    <!-- errors will go here -->
+                </div>
+
+                <!-- birth year -->
+                <div id="name-group" class="form-group">
+                    <label for="birth">birth year</label>
+                    <input type="text" class="form-control" name="birthyear" id="birthyear" placeholder="write birth year here" required>
+                    <!-- errors will go here -->
+                </div>
+
+                <!-- profession -->
+                <div id="name-group" class="form-group">
+                    <label for="img">img url</label>
+                    <input type="url" class="form-control" name="img_url" id="img_url" placeholder="write profession here">
+                    <!-- errors will go here -->
+                </div>
+
+                <button id="submit" type="submit" class="btn btn-success">Submit</button>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
