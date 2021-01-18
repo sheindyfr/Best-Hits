@@ -1,3 +1,5 @@
+## Best-Hits
+
 Best-Hits REST service, add your favorite artists & songs.
 
 this project has coded as part of Distributed Systems course.
@@ -6,11 +8,13 @@ this project has coded as part of Distributed Systems course.
 
 #### How to run?
 
-in the server side:
-``npm i``
-``node ./server``
+from the server side:
 
-in the client side:
+``npm i``
+
+``node server.js``
+
+from the client side:
 http://localhost:3001/
 
 #### Technologies:
